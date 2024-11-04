@@ -39,7 +39,7 @@ const notes = [
 
    {
       key: 3,
-      title: "Work Experince",
+      title: "Experince",
       content: (
          <div className="wrapper">
             <div className="school-college">
@@ -73,16 +73,16 @@ const notes = [
    },
    {
       key: 5,
-      title: "MERN Developer", // Update the title to avoid duplication
+      title: "MERN Dev", // Update the title to avoid duplication
       content: (
          <div className="wrapper">
-            <div className="school-college">
-               <div className="flex-space-between">
+            <div className="skills">
+               <div className="category">
                   <div><h4>FRONTEND</h4></div>
                   <div><h4>BACKEND</h4></div>
                   <div><h4>DATABASE</h4></div>
                </div>
-               <div className="flex-space-between">
+               <div className="category">
                   <ul>
                      <li>HTML</li>
                      <li>CSS</li>
@@ -108,7 +108,7 @@ const notes = [
    },
    {
       key: 6,
-      title: "BCA Course Subjects ", // Update the title to avoid duplication
+      title: "BCA Subjects ", // Update the title to avoid duplication
       content: (
          <div className="wrapper">
             <div className="school-college">
@@ -147,8 +147,6 @@ const notes = [
             <div className="school-college">
                <p>English</p>
                <p>Hindi</p>
-
-
             </div>
          </div>
       )
