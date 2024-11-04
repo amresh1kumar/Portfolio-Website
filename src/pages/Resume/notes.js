@@ -4,19 +4,19 @@ const notes = [
       title: "Education",
       content: (
          <div className="wrapper">
-            <div className="school-college">
+            <div className="school-college2">
                <h4>Shree Ganesh High School</h4>
-               <p className="flex-space-between">Bihar board<span>Bakhtiyarpur, Patna</span></p>
-               <p className="flex-space-between">10th Science 1st DIV (69.4%)<span>2018-2019</span></p>
+               <p className="flex-space-between2">Bihar board<span>Bakhtiyarpur, Patna</span></p>
+               <p className="flex-space-between2">10th Science 1st DIV (69.4%)<span>2018-2019</span></p>
                <h4>RLSY College </h4>
-               <p className="flex-space-between">Bihar board<span>Bakhtiyarpur, Patna</span></p>
-               <p className="flex-space-between">11th & 12th to PCM 1st DIV (61.4%) <span>2019-2021</span></p>
+               <p className="flex-space-between2">Bihar board<span>Bakhtiyarpur, Patna</span></p>
+               <p className="flex-space-between2">11th & 12th to PCM 1st DIV (61.4%) <span>2019-2021</span></p>
                <h4>Disha College </h4>
-               <p className="flex-space-between">Pt. Ravishankar University <span>Raipur, Chattisgarh</span></p>
-               <p className="flex-space-between">Bachelor of computer application (76.57%)  <span>2021-2024</span></p>
+               <p className="flex-space-between2">Pt. Ravishankar University <span>Raipur, Chattisgarh</span></p>
+               <p className="flex-space-between2">Bachelor of computer application (76.57%)  <span>2021-2024</span></p>
                <h4>Raipur Institute of Technology</h4>
-               <p className="flex-space-between">CG Swami Vivekanand Technical University<span>Raipur, Chattisgarh</span></p>
-               <p className="flex-space-between">Master of computer application (Pursuing)  <span>2024-2026</span></p>
+               <p className="flex-space-between2">CG Swami Vivekanand Technical University<span>Raipur, Chattisgarh</span></p>
+               <p className="flex-space-between2">Master of computer application (Pursuing)  <span>2024-2026</span></p>
             </div>
          </div>
       )
