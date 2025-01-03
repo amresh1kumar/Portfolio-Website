@@ -4,15 +4,15 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 const Header = () => {
-  const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth <= 992);
+  const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth <= 1024);
   const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsScreenSmall(window.innerWidth <= 992);
+      setIsScreenSmall(window.innerWidth <= 1024);
 
       // Reset sidebar state when switching screen sizes
-      if (window.innerWidth > 992) {
+      if (window.innerWidth > 1024) {
         setShowSidebar(false);
       }
     };
