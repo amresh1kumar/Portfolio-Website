@@ -30,7 +30,7 @@ const Header = () => {
       <nav className="navbar">
         {/* Logo */}
         <div className="navbar-logo">
-          <Link to="/Homepage">Amresh</Link>
+          <Link to="/Homepage" onClick={toggleSidebar}>Amresh</Link>
         </div>
 
         {/* Sidebar Toggle Button for Small Screens */}
@@ -43,26 +43,26 @@ const Header = () => {
         {/* Navbar List for Large Screens */}
         {!isScreenSmall && (
           <ul className="navbar-list">
-            <li><Link to="/Homepage">Home</Link></li>
-            <li><Link to="/About">About</Link></li>
-            <li><Link to="/Resume">Resume</Link></li>
+            <li><Link to="/Homepage" onClick={toggleSidebar}>Home</Link></li>
+            <li><Link to="/About" onClick={toggleSidebar}>About</Link></li>
+            <li><Link to="/Resume" onClick={toggleSidebar}>Resume</Link></li>
             <li>
-              <a href="mailto:amreshbkp0111@gmail.com" target="_blank">
+              <a href="mailto:amreshbkp0111@gmail.com" target="_blank" onClick={toggleSidebar}>
                 <img src={`${process.env.PUBLIC_URL}/icons8-gmail.svg`} alt="Gmail" />
               </a>
             </li>
             <li>
-              <a href="https://github.com/amresh1kumar" target="_blank">
+              <a href="https://github.com/amresh1kumar" target="_blank" onClick={toggleSidebar}>
                 <img src={`${process.env.PUBLIC_URL}/icons8-github.svg`} alt="GitHub" />
               </a>
             </li>
             <li>
-              <a href="https://x.com/amresh1kumar" target="_blank">
+              <a href="https://x.com/amresh1kumar" target="_blank" onClick={toggleSidebar}>
                 <img src={`${process.env.PUBLIC_URL}/icons8-x.svg`} alt="X" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/amresh1kumar/" target="_blank">
+              <a href="https://www.linkedin.com/in/amresh1kumar/" target="_blank" onClick={toggleSidebar}>
                 <img src={`${process.env.PUBLIC_URL}/icons8-linkedin%20(2).svg`} alt="LinkedIn" />
               </a>
             </li>
@@ -78,27 +78,48 @@ const Header = () => {
             </div>
 
             <ul className="nav-menu-items">
-              <li><Link to="/Homepage">Home </Link></li>
-              <li><Link to="/About">About</Link></li>
-              <li><Link to="/Resume">Resume</Link></li>
+              <li className="nav-item-1">
+                <Link to="/Homepage" onClick={toggleSidebar}>Home</Link>
+              </li>
+              <li className="nav-item-2">
+                <Link to="/About" onClick={toggleSidebar}>About</Link>
+              </li>
+              <li className="nav-item-3">
+                <Link to="/Resume" onClick={toggleSidebar}>Resume</Link>
+              </li>
               <li className="nav-item-4">
-                <a href="mailto:amreshbkp0111@gmail.com" target="_blank">
+                <a href="mailto:amreshbkp0111@gmail.com" onClick={toggleSidebar}>
                   <img src={`${process.env.PUBLIC_URL}/icons8-gmail.svg`} alt="Gmail" />
                 </a>
               </li>
               <li className="nav-item-5">
-                <a href="https://github.com/amresh1kumar" target="_blank">
-                  <img src={`${process.env.PUBLIC_URL}/icons8-github.svg`} target="new" alt="GitHub" />
+                <a
+                  href="https://github.com/amresh1kumar"
+                  target="new"
+                  onClick={toggleSidebar}
+                >
+                  <img src={`${process.env.PUBLIC_URL}/icons8-github.svg`} alt="GitHub" />
                 </a>
               </li>
               <li className="nav-item-6">
-                <a target="_blank" href="https://x.com/amresh1kumar">
+                <a
+                  href="https://x.com/amresh1kumar"
+                  target="new"
+                  onClick={toggleSidebar}
+                >
                   <img src={`${process.env.PUBLIC_URL}/icons8-x.svg`} alt="X" />
                 </a>
               </li>
               <li className="nav-item-7">
-                <a target="_blank" href="https://www.linkedin.com/in/amresh1kumar/">
-                  <img src={`${process.env.PUBLIC_URL}/icons8-linkedin%20(2).svg`} alt="LinkedIn" />
+                <a
+                  href="https://www.linkedin.com/in/amresh1kumar/"
+                  target="new"
+                  onClick={toggleSidebar}
+                >
+                  <img
+                    src={`${process.env.PUBLIC_URL}/icons8-linkedin%20(2).svg`}
+                    alt="LinkedIn"
+                  />
                 </a>
               </li>
             </ul>
